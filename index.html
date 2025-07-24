@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cupfee</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/seedrandom@3.0.5/seedrandom.min.js"></script>
+</head>
+<body>
+  <div class="machine">
+    <h1>Cupfee</h1>
+    <p id="clue">Clue: ...</p>
+    <div class="dials">
+      <div class="dial" data-index="0">
+        <div class="knob"></div>
+        <div class="readout" data-index="0">0°</div>
+        <div class="label">Roast</div>
+      </div>
+      <div class="dial" data-index="1">
+        <div class="knob"></div>
+        <div class="readout" data-index="1">0°</div>
+        <div class="label">Sweetness</div>
+      </div>
+      <div class="dial" data-index="2">
+        <div class="knob"></div>
+        <div class="readout" data-index="2">0°</div>
+        <div class="label">Flavor</div>
+      </div>
+    </div>
+    <button id="brew">Brew!</button>
+    <p id="feedback"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

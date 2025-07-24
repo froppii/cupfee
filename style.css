@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f7f3e9;
+  margin: 0;
+  padding: 0;
+}
+
+.machine {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 16px;
+  background: #fff8dc;
+  border-radius: 5px;
+}
+
+.dials {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+}
+
+.dial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.knob {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #333;
+  border-radius: 50%;
+  background: #eee;
+  transition: transform 0.2s ease;
+  cursor: grab;
+}
+
+.readout {
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+.label {
+  margin-top: 0.25em;
+  font-size: 0.9em;
+  color: #444;
+}
