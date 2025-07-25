@@ -8,29 +8,50 @@
   <script src="https://cdn.jsdelivr.net/npm/seedrandom@3.0.5/seedrandom.min.js"></script>
 </head>
 <body>
-  <div class="machine">
+  <div id="intro">
     <h1>Cupfee</h1>
-    <p id="clue">Clue: ...</p>
-    <div class="dials">
-      <div class="dial" data-index="0">
-        <div class="knob"></div>
-        <div class="readout" data-index="0">0°</div>
-        <div class="label">Roast</div>
-      </div>
-      <div class="dial" data-index="1">
-        <div class="knob"></div>
-        <div class="readout" data-index="1">0°</div>
-        <div class="label">Sweetness</div>
-      </div>
-      <div class="dial" data-index="2">
-        <div class="knob"></div>
-        <div class="readout" data-index="2">0°</div>
-        <div class="label">Flavor</div>
-      </div>
-    </div>
-    <button id="brew">Brew!</button>
-    <p id="feedback"></p>
+    <p>spinny spinny knobs figure out the brew of the day :3</p>
+    <button id="startButton">start brew</button>
   </div>
+
+  <div id="puzzle" style="display: none;">
+    <div class="machine">
+      <p id="clue">Clue: ...</p>
+      <div class="dials">
+        <div class="dial" data-index="0">
+          <div class="knob-wrapper">
+            <div class="tick-marks"></div>
+            <div class="knob"></div>
+          </div>
+          <div class="readout" data-index="0">0°</div>
+          <div class="label">Roast</div>
+        </div>
+        <div class="dial" data-index="1">
+          <div class="knob-wrapper">
+            <div class="tick-marks"></div>
+            <div class="knob"></div>
+          </div>
+          <div class="readout" data-index="1">0°</div>
+          <div class="label">Sweetness</div>
+        </div>
+        <div class="dial" data-index="2">
+          <div class="knob-wrapper">
+            <div class="tick-marks"></div>
+            <div class="knob"></div>
+          </div>
+          <div class="readout" data-index="2">0°</div>
+          <div class="label">Flavor</div>
+        </div>
+      </div>
+      <button id="brew">Brew!</button>
+      <p id="feedback"></p>
+    </div>
+    <div id="timer">Time: 00:00</div>
+    <div id="result"></div>
+    <pre id="share-text"></pre>
+    <button id="copy-button" style="display: none;">Copy</button>
+    <span id="copy-confirmation" style="display: none; margin-left: 10px; color: green;">Copied!</span>
+  </div>
+
   <script src="script.js"></script>
 </body>
-</html>
